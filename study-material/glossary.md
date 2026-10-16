@@ -1,0 +1,25 @@
+# Glossary — CCDV-F
+
+- **Agent**: LLM-driven system that dynamically directs its own processes and tool use.
+- **Agent loop**: Think → tool call → observe → repeat until stop condition.
+- **Agentic framework**: Abstraction library for building agents (LangGraph, Strands, PydanticAI, Agent SDK).
+- **Batch API / Message Batches API**: Async bulk processing at 50% cost.
+- **CLAUDE.md**: Markdown guidance file for Claude Code; hierarchical (home→project→subfolder).
+- **Content boundary**: Separation of trusted instructions from untrusted data.
+- **Context rot**: Quality degradation as context grows/stales.
+- **Context window**: Max tokens a model can process in one request.
+- **Extended thinking**: Model reasoning tokens (budget_tokens) for complex tasks.
+- **Guardrails**: Safety controls (input/output filters, hooks, policies).
+- **Hooks**: Pre/post tool callbacks for deterministic guardrails.
+- **Jailbreak**: Attempt to bypass safety/policy constraints.
+- **MCP (Model Context Protocol)**: Standard connecting AI apps to tools/data (tools/resources/prompts).
+- **Prompt caching**: Reuse cached prompt prefixes to cut cost/latency (5-min default TTL).
+- **Prompt injection**: Malicious instructions embedded in user/untrusted content.
+- **RAG**: Retrieval-Augmented Generation — fetch relevant context just-in-time.
+- **Server tool**: Tool executed on Anthropic infra (web_search, code_execution, etc.).
+- **Client tool**: Tool defined by you, executed in your app.
+- **stop_reason**: end_turn, max_tokens, stop_sequence, tool_use, pause_turn, refusal.
+- **Subagent**: Specialized agent for a subtask; isolates context.
+- **tool_choice**: auto/any/tool/none — controls tool invocation.
+- **Workflow**: Predetermined code paths orchestrating LLM and tools.
+- **Zero/one/few-shot**: Prompting with 0/1/N examples.
